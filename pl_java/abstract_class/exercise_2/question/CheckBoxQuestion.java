@@ -9,8 +9,6 @@ public class CheckBoxQuestion extends Question{
  */
     private List<String> checkboxAnswerList;
     private List<String> checkboxOptions;
-
-
 /*
  * Constructors
  */
@@ -19,12 +17,9 @@ public class CheckBoxQuestion extends Question{
         setQuestionText(questionText);
         setCheckboxOptions(choiceOptions);
     }
-
-
 /*
  * Getters
  */
-
     public List<String> getCheckboxAnswerList() {
         return checkboxAnswerList;
     }

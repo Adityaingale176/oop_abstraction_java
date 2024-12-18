@@ -9,7 +9,7 @@ public class Hourly extends Employee{
       super(firstName,lastName);
       this.rate = rate;
       this.workedHours = workedHours;
-      super.calculateSalary(this.rate * this.workedHours);
+      calculateSalary(rate);
       System.out.println("Inside HourlyEmployee Constructor");
     }
   
@@ -17,5 +17,10 @@ public class Hourly extends Employee{
     public double getSalary(){
       System.out.println("Inside HourlyEmployee getSalary Method");
       return super.getSalary();
+    }
+
+    @Override
+    protected void calculateSalary(double salary){
+      setSalary(this.rate * this.workedHours);
     }
   }

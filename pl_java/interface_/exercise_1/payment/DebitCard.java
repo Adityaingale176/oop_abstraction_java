@@ -1,6 +1,6 @@
 package pl_java.interface_.exercise_1.payment;
 
-public class DebitCard{
+public class DebitCard implements Payable{
     /*
   .
   .
@@ -8,7 +8,7 @@ public class DebitCard{
   .
   .
   */
-    public void payWithDebitCard(){
+    public void pay(){
     System.out.println("Paid successfully using DebitCard");
   }
 }

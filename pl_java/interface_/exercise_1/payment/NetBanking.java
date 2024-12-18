@@ -1,6 +1,6 @@
 package pl_java.interface_.exercise_1.payment;
 
-public class NetBanking{
+public class NetBanking implements Payable{
     /*
   .
   .
@@ -8,7 +8,7 @@ public class NetBanking{
   .
   .
   */
-    public void payWithNetBanking(){
+    public void pay(){
     System.out.println("Paid successfully using NetBanking");
   }
 }

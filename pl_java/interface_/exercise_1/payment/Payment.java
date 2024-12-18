@@ -8,20 +8,8 @@ public class Payment{
     .
     .
     */
-    public void PayWithUPI(){
-      UPI upiPay = new UPI();
-      upiPay.payWithUPI();
-    }
-    public void PayWithDebitCard(){
-      DebitCard debitCardPay = new DebitCard();
-      debitCardPay.payWithDebitCard();
-    }
-    public void PayWithNetBanking(){
-      NetBanking netBankingPay = new NetBanking();
-      netBankingPay.payWithNetBanking();
-    }
-    public void PayWithPaytmWallet(){
-      Paytm paytmPay = new Paytm();
-      paytmPay.payWithPaytmWallet();
+    public void pay(int paymentType){
+      Payable payment = PaymentCreater.getPaymentProvider(paymentType);
+      payment.pay();
     }
   }

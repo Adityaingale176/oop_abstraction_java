@@ -19,7 +19,6 @@ public abstract class Question {
         /*
          * 
          */
-
         this.questionType = questionType;
     }
 
@@ -28,7 +27,6 @@ public abstract class Question {
         /*
          * 
          */
-        
         this.questionText = questionText;
     }
 }

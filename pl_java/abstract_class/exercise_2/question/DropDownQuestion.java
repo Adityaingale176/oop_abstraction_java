@@ -3,13 +3,11 @@ package pl_java.abstract_class.exercise_2.question;
 import java.util.List;
 
 public class DropDownQuestion extends Question{
-
 /*
  * Attributes
  */
 private String dropDownAnswer;
 private List<String> dropDownOptions;
-
 
 /*
  * Constructors
@@ -19,7 +17,6 @@ public DropDownQuestion(String questionText, List<String> choiceOptions) {
     setQuestionText(questionText);
     setDropDownOptions(choiceOptions);
 }
-
 
 /*
 * Getters
@@ -32,8 +29,6 @@ public String getDropDownAnswer() {
 public List<String> getDropDownOptions() {
     return dropDownOptions;
 }
-
-
 /*
 * Setters
 */

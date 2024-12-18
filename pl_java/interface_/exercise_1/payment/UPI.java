@@ -1,6 +1,6 @@
 package pl_java.interface_.exercise_1.payment;
 
-public class UPI {
+public class UPI implements Payable{
     /*
   .
   .
@@ -8,7 +8,7 @@ public class UPI {
   .
   .
   */
-  public void payWithUPI(){
+  public void pay(){
     System.out.println("Paid successfully using UPI");
   } 
 }

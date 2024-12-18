@@ -1,6 +1,6 @@
 package pl_java.interface_.exercise_1.payment;
 
-public class Paytm{
+public class Paytm implements Payable{
     /*
   .
   .
@@ -8,7 +8,7 @@ public class Paytm{
   .
   .
   */
-   public void payWithPaytmWallet(){
+   public void pay(){
     System.out.println("Paid successfully using PaytmWallet");
   }
 }
